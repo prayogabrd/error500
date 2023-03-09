@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Error 500</title>
+    <style>
+      body {
+        background: linear-gradient(90deg, #1c1c1c 0%, #383838 100%);
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 4rem;
+        margin-top: 10rem;
+        text-align: center;
+        text-shadow: 3px 3px 0 #000;
+      }
+      p {
+        font-size: 2rem;
+        margin: 2rem 0;
+        text-align: center;
+        text-shadow: 2px 2px 0 #000;
+      }
+      .glitch {
+        font-size: 8rem;
+        color: #ff0;
+        position: relative;
+        animation: glitch 1s infinite linear;
+        transform: skew(-20deg);
+        text-shadow: 2px 2px #ff0;
+      }
+      @keyframes glitch {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        25% {
+          top: -5px;
+          left: 5px;
+        }
+        50% {
+          top: 5px;
+          left: -5px;
+        }
+        75% {
+          top: 0;
+          left: 5px;
+        }
+        100% {
+          top: 0;
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1><span class="glitch">Error 500</span></h1>
+    <p>Oops, something went wrong on the server. Please try again later.</p>
+  </body>
+</html>
